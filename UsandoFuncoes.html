@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+<script>
+    function pularLinhas() {
+        document.write("<br>");
+    };
+
+    function calcularMediaDeIdades(media) {
+        media = Math.round(media / 4);
+        document.write("--- Média de idades = " + media + " -------");
+    }
+
+    var ano = 2022;
+    var media = 0;
+    
+    var idade = ano - 1999;
+    media = media + idade;
+    document.write("Flávio tem " + idade + " anos ");
+    pularLinhas();
+    //
+    idade = ano - 1978;
+    media = media + idade;
+    document.write("Luiz tem " + idade + " anos ");
+    pularLinhas();
+    //
+    idade = ano - 1967;
+    media = media + idade;    
+    document.write("Pedro tem " + idade + " anos ");
+    pularLinhas();
+    //
+    idade = ano - 1965;
+    media = media + idade;        
+    document.write("José Luis tem " + idade + " anos ");
+    pularLinhas();
+    pularLinhas();
+    //
+    calcularMediaDeIdades(media);
+    pularLinhas();
+
+</script>
