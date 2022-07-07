@@ -9,28 +9,30 @@
         document.write("--- Média de idades = " + media + " -------");
     }
 
+    function mostrarTexto(texto) {
+        document.write(texto);
+        pularLinhas();
+    }
+
     var ano = 2022;
     var media = 0;
     
     var idade = ano - 1999;
     media = media + idade;
-    document.write("Flávio tem " + idade + " anos ");
-    pularLinhas();
+    mostrarTexto("Flávio tem " + idade + " anos ");
     //
     idade = ano - 1978;
     media = media + idade;
-    document.write("Luiz tem " + idade + " anos ");
-    pularLinhas();
-    //
+    mostrarTexto("Luiz tem " + idade + " anos ");
+
     idade = ano - 1967;
     media = media + idade;    
-    document.write("Pedro tem " + idade + " anos ");
-    pularLinhas();
+    mostrarTexto("Pedro tem " + idade + " anos ");
     //
     idade = ano - 1965;
     media = media + idade;        
-    document.write("José Luis tem " + idade + " anos ");
-    pularLinhas();
+    mostrarTexto("José Luis tem " + idade + " anos ");
+    //
     pularLinhas();
     //
     calcularMediaDeIdades(media);
