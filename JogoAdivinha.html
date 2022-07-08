@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+<script>
+    function pularLinhas() {
+        document.write("<br>");
+    };
+
+    function mostrarTexto(texto) {
+        document.write(texto);
+        pularLinhas();
+    }
+
+    function calculaImc(altura, peso) {
+        return peso / (altura * altura);
+    }
+
+    var numeroPensado = Math.round(Math.random() * 10);
+    console.log(numeroPensado);
+
+    var chute = parseInt(prompt("Digite o seu chute: "));
+
+    if(chute == numeroPensado) {
+        mostrarTexto("Você acertou!");
+    } else {
+        mostrarTexto("Você errou, o número pensado foi " + numeroPensado);
+    }
+
+
+</script>
