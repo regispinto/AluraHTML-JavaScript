@@ -9,12 +9,11 @@
         pularLinhas();
     }
 
-    function calculaImc(peso, altura) {
-        var imc = peso / (altura * altura);
-        mostrarTexto("O IMC cálculado é " + imc);
+    function calculaImc(altura, peso) {
+        return peso / (altura * altura);
     }
 
-    calculaImc(1.71, 73);
-    calculaImc(1.72, 68);
+    mostrarTexto("O IMC cálculado é " + calculaImc(1.71, 73));
+    mostrarTexto("O IMC cálculado é " + calculaImc(1.72, 68));
 
 </script>
