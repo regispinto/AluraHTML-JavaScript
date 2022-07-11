@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+<script>
+    function pularLinhas() {
+        document.write("<br>");
+    };
+
+    function mostrarTexto(texto) {
+        document.write(texto);
+        pularLinhas();
+    }
+
+    var anoCopa = 1930;
+
+    while (anoCopa <= 2022) {
+        mostrarTexto("Ano de copa: " + anoCopa);
+
+        anoCopa = anoCopa + 4
+    };
+
+    mostrarTexto("Fim");
+
+</script>
