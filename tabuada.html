@@ -1,7 +1,11 @@
 <meta charset="UTF-8">
 <script>
-    function pularLinhas() {
-        document.write("<br>");
+    function pularLinhas(totalDeLinhas = 1) {
+
+        for(var linha = 1; linha <= totalDeLinhas; linha++){
+            document.write("<br>");    
+        }
+        
     };
 
     function mostrarTexto(texto) {
@@ -18,13 +22,22 @@
         tabuada = parseInt(prompt("Qual a tabuada? "));    
     }
     
-    // Gera a tabuada informada
+    // Gera a tabuada informada utilizando o WHILE
+    mostrarTexto("-- Tabuada utilizando o WHILE ------------ ");
+
     while (multiplicador <= 10) {
         mostrarTexto(tabuada + " x " + multiplicador + " = " + tabuada * multiplicador);
 
         multiplicador++;
     };
 
-    mostrarTexto("Fim");
+    pularLinhas(3);
+    
+    // Gera a tabuada informada utilizando o FOR
+    mostrarTexto("-- Tabuada utilizando o FOR --------------- ");
+    
+    for(var multiplicador = 1; multiplicador <= 10; multiplicador++){
+        mostrarTexto(tabuada + " x " + multiplicador + " = " + tabuada * multiplicador);
+    }
 
 </script>
