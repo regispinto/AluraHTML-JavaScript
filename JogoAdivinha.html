@@ -5,24 +5,35 @@
     };
 
     function mostrarTexto(texto) {
+        console.log(texto);
+
         document.write(texto);
         pularLinhas();
-    }
-
-    function calculaImc(altura, peso) {
-        return peso / (altura * altura);
     }
 
     var numeroPensado = Math.round(Math.random() * 10);
     console.log(numeroPensado);
 
-    var chute = parseInt(prompt("Digite o seu chute: "));
+    var tentativas = 1;
 
-    if(chute == numeroPensado) {
-        mostrarTexto("Você acertou!");
-    } else {
-        mostrarTexto("Você errou, o número pensado foi " + numeroPensado);
+    while(tentativas <= 3) {
+
+        var chute = parseInt(prompt("Digite o seu chute: "));
+
+        if(chute == numeroPensado) {
+
+            console.log("ACERTOU!!");
+            mostrarTexto("Você ACERTOU, o número pensado era " + numeroPensado + "!");
+            break;
+
+        } else {
+            console.log("ERROU");
+            mostrarTexto("Você ERROU!");
+        }        
+
+        tentativas++;
     }
 
+    mostrarTexto("FIM");
 
 </script>
