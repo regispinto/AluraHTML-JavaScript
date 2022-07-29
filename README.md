@@ -1,4 +1,4 @@
-# Treinamento Lógica de Programação II da Alura
+# Treinamento Lógica de Programação da Alura
 ## Utilzando o HTML e JavaScript 
 
 
